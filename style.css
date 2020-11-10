@@ -50,6 +50,30 @@ header h1 {
   font-size: 56px;
 }
 
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0 25px 0 0;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
 
 /*  Main */
 
@@ -121,6 +145,19 @@ footer h3.lastchild {
   .group {
     flex-direction: row;
   }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    padding-left: 50px;
+  }
+
+  header nav {
+    margin-top: 25px;
+  }
 }
 
 /* ARTICLE SECTIONS */
@@ -164,6 +201,9 @@ form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 20px;
 }
 
 form label {
@@ -172,4 +212,11 @@ form label {
   margin-bottom: 10px;
   color: black;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form #message {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
 }
